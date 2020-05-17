@@ -6,6 +6,7 @@ import Fab from '@material-ui/core/Fab';
 import Home from '@material-ui/icons/Home';
 import { makeStyles } from '@material-ui/core/styles';
 import Metadata from "../pages/Metadata";
+import {Link} from "gatsby"
 
 
 export const query=graphql`query(
@@ -34,9 +35,11 @@ function BlogDetail(props){
         <h1>{props.data.markdownRemark.frontmatter.title}</h1>
           <p>{props.data.markdownRemark.frontmatter.date}</p>
          <div dangerouslySetInnerHTML={{__html:props.data.markdownRemark.html}}></div>
-         <Fab href="/" className="BlogBottomBtn" color="secondary" aria-label="add">
+         <Link to={"/"}>
+         <Fab className="BlogBottomBtn" color="secondary" aria-label="add">
         <Home />
       </Fab>
+      </Link>
         </>
 
     )
