@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import AtmIcon from '@material-ui/icons/Atm';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -22,7 +21,6 @@ export default function Header() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar variant="dense">
-            <AtmIcon fontSize="large"/>
           <Typography className="headerName" variant="h6" color="inherit">
                karitter
           </Typography>
