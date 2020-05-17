@@ -4,7 +4,6 @@ import {graphql,useStaticQuery} from "gatsby"
 import Blogitem from "../components/Blogitem"
 import Metadata from "./Metadata"
 import Header from "../components/Header"
-import styles from "../components/style.css"
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';

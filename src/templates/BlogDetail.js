@@ -6,7 +6,6 @@ import Fab from '@material-ui/core/Fab';
 import Home from '@material-ui/icons/Home';
 import { makeStyles } from '@material-ui/core/styles';
 import Metadata from "../pages/Metadata";
-import styles from "../components/style.css";
 
 
 export const query=graphql`query(
