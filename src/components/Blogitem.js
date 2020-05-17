@@ -28,7 +28,6 @@ return(
     <>
 
     <Card className={classes.root}>
-    <Link to={`/${link}`} className="cardLink">
       <CardActionArea>
 
         <CardMedia
@@ -48,7 +47,6 @@ return(
           </Typography>
         </CardContent>
       </CardActionArea>
-      </Link>
       <CardActions>
         <Button size="small" color="primary">
         <Link to={`/${link}`}>seemore</Link>
