@@ -5,6 +5,7 @@ import Header from "../components/Header"
 import Fab from '@material-ui/core/Fab';
 import Home from '@material-ui/icons/Home';
 import { makeStyles } from '@material-ui/core/styles';
+import Metadata from "../pages/Metadata"
 
 
 export const query=graphql`query(
@@ -27,6 +28,7 @@ function BlogDetail(props){
 
     return(
         <>
+        <Metadata/>
     <Header/>
 
         <h1>{props.data.markdownRemark.frontmatter.title}</h1>
